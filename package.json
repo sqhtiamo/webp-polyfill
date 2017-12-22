@@ -15,11 +15,13 @@
     "webp",
     "polyfill"
   ],
-  "author": "cloughzhang",
+  "author": "cloughzhang, lusyn",
   "license": "MIT",
   "devDependencies": {
+    "css-loader": "^0.28.7",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
+    "style-loader": "^0.19.1",
     "webpack": "^3.10.0"
   }
 }
