@@ -39,7 +39,9 @@ function webp(param) {
 
 // 处理css
 detect(function (webpSupported) {
-  document.body.className += '_webp_supported';
+  if (webpSupported) {
+    document.body.className += '_webp_supported';
+  }
 });
 
 
