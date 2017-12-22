@@ -1,6 +1,6 @@
 {
   "name": "@alipay/webp-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Polyfill Solution for Browers not Supported WebP",
   "main": "dist/webp.js",
   "directories": {
