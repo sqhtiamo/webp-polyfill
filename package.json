@@ -1,5 +1,5 @@
 {
-  "name": "webp-polyfill",
+  "name": "@alipay/webp-polyfill",
   "version": "1.0.0",
   "description": "A Polyfill Solution for Browers not Supported WebP",
   "main": "dist/webp.js",
@@ -23,5 +23,8 @@
     "less-loader": "^4.0.5",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   }
 }
