@@ -2,16 +2,14 @@
   "name": "webp-polyfill",
   "version": "1.0.0",
   "description": "A Polyfill Solution for Browers not Supported WebP",
-  "main": "webpack.config.js",
+  "main": "dist/webp.js",
   "directories": {
     "example": "example"
   },
   "scripts": {
+    "build": "webpack",
+    "example": "webpack && webpack --config webpack.example.js ",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sqhtiamo/webp-polyfill.git"
   },
   "keywords": [
     "webp",
@@ -19,8 +17,9 @@
   ],
   "author": "cloughzhang",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sqhtiamo/webp-polyfill/issues"
-  },
-  "homepage": "https://github.com/sqhtiamo/webp-polyfill#readme"
+  "devDependencies": {
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "webpack": "^3.10.0"
+  }
 }

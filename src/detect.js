@@ -1,6 +1,6 @@
-var webP = {};
+var _webp = {};
 
-function dectect(callback) {
+function detect(callback) {
   var image = new Image();
   image.src = 'data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA';
   image.onload = image.onerror = function () {
@@ -8,16 +8,16 @@ function dectect(callback) {
   };
 }
 
-dectect(function (supported) {
-  if (webP.supported === undefined) {
-    webP.supported = supported ? true : false;
+detect(function (supported) {
+  if (_webp.supported === undefined) {
+    window._webpSupport = _webp.supported = supported ? true : false;
   }
 });
 
-setTimeout(() => {
-  if (webP.supported !== true) {
-    webP.supported = false;
+setTimeout(function () {
+  if (_webp.supported !== true) {
+    _webp.supported = false;
   }
 }, 50);
-
-exports.defaults = webP;
+// export detect;
+export { detect, _webp as _webSupported };

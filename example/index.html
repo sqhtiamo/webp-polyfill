@@ -6,33 +6,10 @@
 background-image: url(https://gw.alipayobjects.com/zos/rmsportal/iebEUCqksAaKTEhSJoYi.png);
 }
 </style>
-<script>
-var webP = {};
-function testWebP(callback) {
-    var image = new Image();
-    image.src = 'data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA';
-    image.onload = image.onerror = function () {
-        callback(image.height === 2);
-    };
-}
-
-testWebP(function (supported) {
-    webP.supported = supported ? true : false;
-});
-
-console.log(webP)
-setTimeout(function () {
-  console.log(webP)
-  if (webP.supported) {
-    document.getElementById('test').className = 'test';
-  }
-}, 0);
-
-
-</script>
 </head>
 <body>
 <div id="test" style="height: 300px; background-color: red;" class="xx">1111</div>
 </body>
-<script src="../src/detect.js" >
+<script type="text/javascript" src="./example.js" charset="utf-8"></script>
+
 </html>

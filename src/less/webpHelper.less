@@ -1,0 +1,7 @@
+.webpHelper(@url: '') {
+  @websuffix: '@.webp';
+  background: url('@{url}');
+  ._webp_supported & {
+    background: url('@{url}@{websuffix}');
+  }
+}
